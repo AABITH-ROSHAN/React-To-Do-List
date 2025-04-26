@@ -7,8 +7,8 @@ import AddItem from './AddItem';
 import SearchItem from './SearchItem';
 
 function App() {
-  var [items,setItem] = useState(JSON.parse(localStorage.getItem('toDoList') || null)
-);
+  var [items,setItem] = useState(JSON.parse(localStorage.getItem('toDoList') || '[]'));
+
 const [newItem,setNewItem]=useState('')
 
 const addItem = (item)=>{
@@ -36,7 +36,7 @@ setItem(listItem)
 localStorage.setItem("toDoList",JSON.stringify(listItem))
     } 
 const deleteList=(id)=>{
-const listItem =items.filter((item)=>item.id!==id ? {item}:null )
+const listItem = items.filter((item) => item.id !== id);
 setItem(listItem)
 localStorage.setItem("toDoList",JSON.stringify(listItem))
 }
