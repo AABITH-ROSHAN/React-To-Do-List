@@ -1,0 +1,182 @@
+.App {
+  text-align: center;
+  display: grid;
+  grid-template-rows: 10vh 10vh 10vh minmax(65vh,auto) 5vh;
+  font-family: Arial, Helvetica, sans-serif;
+  background: hsla(64, 41%, 92%, 1);
+
+background: linear-gradient(90deg, hsla(64, 41%, 92%, 1) 0%, hsla(196, 83%, 84%, 1) 50%, hsla(305, 75%, 83%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(64, 41%, 92%, 1) 0%, hsla(196, 83%, 84%, 1) 50%, hsla(305, 75%, 83%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(64, 41%, 92%, 1) 0%, hsla(196, 83%, 84%, 1) 50%, hsla(305, 75%, 83%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#F2F3E2", endColorstr="#B2E5F8", GradientType=1 );
+}
+header{
+  background: hsla(238, 100%, 71%, 1);
+
+background: linear-gradient(90deg, hsla(238, 100%, 71%, 1) 0%, hsla(295, 100%, 84%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(238, 100%, 71%, 1) 0%, hsla(295, 100%, 84%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(238, 100%, 71%, 1) 0%, hsla(295, 100%, 84%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#696eff", endColorstr="#f8acff", GradientType=1 );
+  font-size: larger;
+  position: relative;
+}
+footer{
+  display: flex;
+  background: hsla(238, 100%, 71%, 1);
+
+background: linear-gradient(90deg, hsla(238, 100%, 71%, 1) 0%, hsla(295, 100%, 84%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(238, 100%, 71%, 1) 0%, hsla(295, 100%, 84%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(238, 100%, 71%, 1) 0%, hsla(295, 100%, 84%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#696eff", endColorstr="#f8acff", GradientType=1 );
+  font-size: large;
+  align-items: center;
+  justify-content: center;
+}
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: x-large;
+}
+.listcontainer {
+  display: flex;
+  flex-direction: column;
+  background-color: #faedfa;
+  cursor: pointer;
+  padding: 0;
+  border-radius: 5px;
+  position: relative;
+}
+.list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; 
+  padding: 15px 20px 15px 20px;
+  box-sizing: border-box;
+  position: relative;
+}
+.list .words{
+  font-size: clamp(18px, 3vw, 24px);
+}
+.list > input {
+  height: 40px;
+  width: 40px;
+}
+.checkbox{
+  display: flex;flex-shrink: 0;
+}
+
+.dustbin{
+  display: flex;
+  position: relative;
+  flex-shrink: 0;
+  height: 70px;
+  margin-left: 4rem;
+  width: 40px;
+  color: darkgrey;
+
+}
+.additem{
+  display: flex;
+  justify-content: center;
+  height: 30px;
+  margin-top: 10px;
+  margin-left: 1em;
+}
+.additem > input {
+  height: 2em;
+  width: 40vw;
+  font-size: large;
+  border-radius: 5px;
+}
+
+.addbutton{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 1rem;
+  font-size: 40px;
+  height: 40px;
+  width: 40px;
+  border: 0;
+  border-radius: 50%;
+}
+
+
+.addbutton :hover{
+  color: limegreen;
+  cursor: pointer;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.7);
+}
+.listlength{
+  font-size: x-large;
+}
+
+.dustbin :hover{
+  color: red;
+}
+.checkbox > input{
+  cursor: pointer;
+}
+.words{
+  padding-left: 2rem;
+  
+}
+hr{
+  background-color: white;
+  height: 2px;
+  margin: 0;
+}
+.searchform {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 15px;
+}
+
+.input-container {
+  position: fixed;
+  width: 40vw;
+  margin-right: 3em;
+  z-index: 1;
+}
+
+.inputsearch {
+  width: 100%;
+  height: 2em;
+  padding-right: 2em;
+  font-size: large;
+  border-radius: 20px;
+}
+
+.searchbutton {
+  position: absolute;
+  right: -30px;
+  top: 50%;
+  transform: translateY(-40%);
+  font-size: 20px;
+  opacity: 0.5;
+  cursor: pointer;
+  border: 0;
+  background-color: white;
+}
+
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
